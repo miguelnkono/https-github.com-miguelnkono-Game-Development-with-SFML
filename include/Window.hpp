@@ -21,6 +21,9 @@ class Window
         sf::Vector2u GetWindowSize();
         void ToggleFullscreen();
 
+        /// Snake
+        sf::RenderWindow* GetRenderWindow();
+
     private:
         void Setup(const std::string& l_title, const sf::Vector2u& l_size);
         void Destroy();

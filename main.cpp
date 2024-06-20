@@ -9,8 +9,8 @@ int main()
         game.HandleInput();
         game.Update();
         game.Render();
-       // sf::sleep(sf::seconds(0.02));
-       game.RestartClock();
+        sf::sleep(sf::seconds(0.02));
+        game.RestartClock();
     }
 
     return 0;

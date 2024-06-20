@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1718896940 source:c:\users\nkono ndeme miguel\desktop\sfml-journeylearn\gamedevelopment\main.cpp
+1718917530 source:c:\users\nkono ndeme miguel\desktop\sfml-journeylearn\gamedevelopment\main.cpp
 	"Game.hpp"
 
-1718896833 source:c:\users\nkono ndeme miguel\desktop\sfml-journeylearn\gamedevelopment\src\window.cpp
+1718917082 source:c:\users\nkono ndeme miguel\desktop\sfml-journeylearn\gamedevelopment\src\window.cpp
 	"Window.hpp"
 
-1718735536 c:\users\nkono ndeme miguel\desktop\sfml-journeylearn\gamedevelopment\include\window.hpp
+1718917082 c:\users\nkono ndeme miguel\desktop\sfml-journeylearn\gamedevelopment\include\window.hpp
 	<string>
 	<SFML/Graphics.hpp>
 
@@ -427,9 +427,23 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1718896857 source:c:\users\nkono ndeme miguel\desktop\sfml-journeylearn\gamedevelopment\src\game.cpp
+1718917404 source:c:\users\nkono ndeme miguel\desktop\sfml-journeylearn\gamedevelopment\src\game.cpp
 	"Game.hpp"
 
-1718896857 c:\users\nkono ndeme miguel\desktop\sfml-journeylearn\gamedevelopment\include\game.hpp
+1718918083 c:\users\nkono ndeme miguel\desktop\sfml-journeylearn\gamedevelopment\include\game.hpp
 	"Window.hpp"
+	"World.hpp"
+
+1718917629 source:c:\users\nkono ndeme miguel\desktop\sfml-journeylearn\gamedevelopment\src\snake.cpp
+	"Snake.hpp"
+
+1718916230 c:\users\nkono ndeme miguel\desktop\sfml-journeylearn\gamedevelopment\include\snake.hpp
+	<vector>
+	"SFML/Graphics.hpp"
+
+1718914862 c:\users\nkono ndeme miguel\desktop\sfml-journeylearn\gamedevelopment\include\world.hpp
+	"Snake.hpp"
+
+1718915625 source:c:\users\nkono ndeme miguel\desktop\sfml-journeylearn\gamedevelopment\src\world.cpp
+	"World.hpp"
 

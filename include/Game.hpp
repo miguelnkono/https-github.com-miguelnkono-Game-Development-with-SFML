@@ -1,6 +1,7 @@
 #ifndef GAME_HPP
 #define GAME_HPP
 #include "Window.hpp"
+#include "World.hpp"
 
 class Game
 {
@@ -16,7 +17,7 @@ class Game
         Window *GetWindow();
 
         /// Mushroom
-        void MoveMushroom();
+        ///void MoveMushroom();
 
         /// Dealing with the time
         sf::Time GetElapsed();
@@ -29,13 +30,17 @@ class Game
         Window m_window; //!< Member variable "m_window"
 
         /// For the mushroom little game
-        sf::Texture m_mushroomTexture;
+        /**sf::Texture m_mushroomTexture;
         sf::Sprite m_mushroom;
-        sf::Vector2i m_increment;
+        sf::Vector2i m_increment;*/
 
         /// Dealing with time
         sf::Clock m_clock;
         sf::Time m_elapsed;
+
+        /// Snake Game
+        World m_world;
+        Snake m_snake;
 };
 
 #endif // GAME_HPP

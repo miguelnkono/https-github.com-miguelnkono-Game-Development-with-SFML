@@ -59,10 +59,14 @@
 		<Unit filename="Others/mushroom.png" />
 		<Unit filename="cb.bmp" />
 		<Unit filename="include/Game.hpp" />
+		<Unit filename="include/Snake.hpp" />
 		<Unit filename="include/Window.hpp" />
+		<Unit filename="include/World.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/Snake.cpp" />
 		<Unit filename="src/Window.cpp" />
+		<Unit filename="src/World.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
