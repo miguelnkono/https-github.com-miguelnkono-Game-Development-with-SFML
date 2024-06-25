@@ -2,6 +2,7 @@
 #define GAME_HPP
 #include "Window.hpp"
 #include "World.hpp"
+#include "Textbox.hpp"
 
 class Game
 {
@@ -41,6 +42,9 @@ class Game
         /// Snake Game
         World m_world;
         Snake m_snake;
+
+        /// Text box.
+        Textbox m_textbox;
 };
 
 #endif // GAME_HPP

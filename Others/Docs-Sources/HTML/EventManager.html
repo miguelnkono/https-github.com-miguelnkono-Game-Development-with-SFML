@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>C:\Users\Nkono Ndeme Miguel\Desktop\SFML-JourneyLearn\GameDevelopment\include\EventManager.hpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="Code::Blocks Exporter plugin" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #FFFFFF; font-weight: bold; font-style: italic; }
+.style11 { color: #000000; background-color: #FFFFFF; font-weight: bold; font-style: italic; }
+.style64 { color: #C8C8C8; }
+.style72 { color: #C8C8C8; }
+.style75 { color: #C8C8C8; }
+.style1 { color: #9898D9; }
+.style23 { color: #9898D9; }
+.style65 { color: #C0C0C0; }
+.style87 { color: #C0C0C0; }
+.style2 { color: #9898D9; }
+.style66 { color: #C0C0C0; }
+.style3 { color: #8080FF; font-weight: bold; }
+.style24 { color: #8080FF; font-weight: bold; }
+.style67 { color: #AAAAF0; font-weight: bold; }
+.style88 { color: #AAAAF0; font-weight: bold; }
+.style15 { color: #8080FF; font-weight: bold; }
+.style79 { color: #AAAAF0; font-weight: bold; }
+.style17 { color: #008080; }
+.style81 { color: #6B9999; }
+.style18 { color: #800000; }
+.style82 { color: #AC5959; }
+.style4 { color: #F000F0; }
+.style68 { color: #F0C8F0; }
+.style5 { color: #0000A0; font-weight: bold; }
+.style69 { color: #8787C8; font-weight: bold; }
+.style16 { color: #00A000; font-weight: bold; }
+.style80 { color: #9AC89A; font-weight: bold; }
+.style19 { color: #BE00BE; font-weight: bold; }
+.style83 { color: #BE89BE; font-weight: bold; }
+.style6 { color: #0000FF; }
+.style12 { color: #0000FF; }
+.style20 { color: #0000FF; }
+.style70 { color: #BEBEFF; }
+.style76 { color: #BEBEFF; }
+.style7 { color: #E0A000; }
+.style71 { color: #E0CE9F; }
+.style8 { color: #000000; }
+.style9 { color: #00A000; }
+.style73 { color: #84A084; }
+.style10 { color: #FF0000; }
+.style74 { color: #FFC8C8; }
+.style50 { color: #404080; font-style: italic; }
+.style114 { color: #8585AC; font-style: italic; }
+.style34 { color: #000000; background-color: #80FFFF; font-weight: bold; }
+.style35 { color: #FFFFFF; background-color: #FF0000; font-weight: bold; }
+.style37 { color: #373737; }
+--></style></head>
+<body>
+<pre>
+<code><span style="font: 10pt Courier New;"><span class="body">  1 </span><span class="style9">#ifndef EVENTMANAGER_HPP</span>
+<span class="body">  2  </span><span class="style9">#define EVENTMANAGER_HPP</span>
+<span class="body">  3  </span>
+<span class="body">  4  </span><span class="style9">#include &lt;vector&gt;</span>
+<span class="body">  5  </span><span class="style9">#include &lt;unordered_map&gt;</span>
+<span class="body">  6  </span><span class="style9">#include &lt;functional&gt;</span>
+<span class="body">  7  </span><span class="style9">#include &lt;SFML/Graphics.hpp&gt;</span>
+<span class="body">  8  </span>
+<span class="body">  9  </span><span class="style15">/// Enumerations of the different type of events.</span>
+<span class="body"> 10  </span><span class="style5">enum class </span><span class="style11">EventType </span><span class="style10">{</span>
+<span class="body"> 11      </span><span class="style11">KeyDown         </span><span class="style10">= </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Event</span><span class="style10">::</span><span class="style11">KeyPressed</span><span class="style10">,</span>
+<span class="body"> 12      </span><span class="style11">Key             </span><span class="style10">= </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Event</span><span class="style10">::</span><span class="style11">KeyReleased</span><span class="style10">,</span>
+<span class="body"> 13      </span><span class="style11">MButtonDown     </span><span class="style10">= </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Event</span><span class="style10">::</span><span class="style11">MouseButtonPressed</span><span class="style10">,</span>
+<span class="body"> 14      </span><span class="style11">MButtonUp       </span><span class="style10">= </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Event</span><span class="style10">::</span><span class="style11">MouseButtonReleased</span><span class="style10">,</span>
+<span class="body"> 15      </span><span class="style11">MouseWheel      </span><span class="style10">= </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Event</span><span class="style10">::</span><span class="style11">MouseWheelMoved</span><span class="style10">,</span>
+<span class="body"> 16      </span><span class="style11">WindowResized   </span><span class="style10">= </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Event</span><span class="style10">::</span><span class="style11">Resized</span><span class="style10">,</span>
+<span class="body"> 17      </span><span class="style11">GainedFocus     </span><span class="style10">= </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Event</span><span class="style10">::</span><span class="style11">GainedFocus</span><span class="style10">,</span>
+<span class="body"> 18      </span><span class="style11">LostFocus       </span><span class="style10">= </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Event</span><span class="style10">::</span><span class="style11">LostFocus</span><span class="style10">,</span>
+<span class="body"> 19      </span><span class="style11">MouseEntered    </span><span class="style10">= </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Event</span><span class="style10">::</span><span class="style11">MouseEntered</span><span class="style10">,</span>
+<span class="body"> 20      </span><span class="style11">MouseLeft       </span><span class="style10">= </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Event</span><span class="style10">::</span><span class="style11">MouseLeft</span><span class="style10">,</span>
+<span class="body"> 21      </span><span class="style11">Closed          </span><span class="style10">= </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Event</span><span class="style10">::</span><span class="style11">Closed</span><span class="style10">,</span>
+<span class="body"> 22      </span><span class="style11">TextEntered     </span><span class="style10">= </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Event</span><span class="style10">::</span><span class="style11">TextEntered</span><span class="style10">,</span>
+<span class="body"> 23      </span><span class="style11">Keyboard        </span><span class="style10">= </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Event</span><span class="style10">::</span><span class="style11">Count </span><span class="style10">+ </span><span class="style4">1</span><span class="style10">, </span><span class="style11">Mouse</span><span class="style10">, </span><span class="style11">Joystick</span>
+<span class="body"> 24  </span><span class="style10">};</span>
+<span class="body"> 25  </span>
+<span class="body"> 26  </span><span class="style15">/// Structure to store the informations about the keys been pressed.</span>
+<span class="body"> 27  </span><span class="style5">struct </span><span class="style11">EventInfo </span><span class="style10">{</span>
+<span class="body"> 28      </span><span class="style11">EventInfo</span><span class="style10">() { </span><span class="style11">m_code </span><span class="style10">= </span><span class="style4">0</span><span class="style10">; }</span>
+<span class="body"> 29      </span><span class="style11">EventInfo</span><span class="style10">(</span><span class="style5">int </span><span class="style11">l_event</span><span class="style10">) { </span><span class="style11">m_code </span><span class="style10">= </span><span class="style11">l_event</span><span class="style10">; }</span>
+<span class="body"> 30  </span>
+<span class="body"> 31      </span><span class="style5">union </span><span class="style10">{</span>
+<span class="body"> 32          </span><span class="style5">int </span><span class="style11">m_code</span><span class="style10">;</span>
+<span class="body"> 33      </span><span class="style10">};</span>
+<span class="body"> 34  </span><span class="style10">};</span>
+<span class="body"> 35  </span>
+<span class="body"> 36  </span><span class="style15">/// Data type to hold the information on the event.</span>
+<span class="body"> 37  </span><span class="style5">using </span><span class="style11">Events </span><span class="style10">= </span><span class="style16">std</span><span class="style10">::</span><span class="style16">vector</span><span class="style10">&lt;</span><span class="style16">std</span><span class="style10">::</span><span class="style16">pair</span><span class="style10">&lt;</span><span class="style11">EventType</span><span class="style10">, </span><span class="style11">EventInfo</span><span class="style10">&gt;&gt;;</span>
+<span class="body"> 38  </span>
+<span class="body"> 39  </span><span class="style15">/// Details about the event actually handling.</span>
+<span class="body"> 40  </span><span class="style5">struct </span><span class="style11">EventDetails </span><span class="style10">{</span>
+<span class="body"> 41      </span><span class="style11">EventDetails</span><span class="style10">(</span><span class="style16">std</span><span class="style10">::</span><span class="style16">string</span><span class="style10">&amp; </span><span class="style11">l_bindName</span><span class="style10">)</span>
+<span class="body"> 42          </span><span class="style10">: </span><span class="style11">m_name</span><span class="style10">(</span><span class="style11">l_bindName</span><span class="style10">)</span>
+<span class="body"> 43      </span><span class="style10">{</span>
+<span class="body"> 44          </span><span class="style11">Clear</span><span class="style10">();</span>
+<span class="body"> 45      </span><span class="style10">}</span>
+<span class="body"> 46  </span>
+<span class="body"> 47      </span><span class="style16">std</span><span class="style10">::</span><span class="style16">string </span><span class="style11">m_name</span><span class="style10">;</span>
+<span class="body"> 48      </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Vector2i m_size</span><span class="style10">;</span>
+<span class="body"> 49      </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Uint32 m_textEntered</span><span class="style10">;</span>
+<span class="body"> 50      </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Vector2i m_mouse</span><span class="style10">;</span>
+<span class="body"> 51      </span><span class="style5">int </span><span class="style11">m_keyCode</span><span class="style10">;      </span><span class="style15">/// Single key code.</span>
+<span class="body"> 52  </span>
+<span class="body"> 53      </span><span class="style5">void </span><span class="style11">Clear</span><span class="style10">()</span>
+<span class="body"> 54      </span><span class="style10">{</span>
+<span class="body"> 55          </span><span class="style11">m_size </span><span class="style10">= </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Vector2i</span><span class="style10">(</span><span class="style4">0</span><span class="style10">, </span><span class="style4">0</span><span class="style10">);</span>
+<span class="body"> 56          </span><span class="style11">m_textEntered </span><span class="style10">= </span><span class="style4">0</span><span class="style10">;</span>
+<span class="body"> 57          </span><span class="style11">m_mouse </span><span class="style10">= </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Vector2i</span><span class="style10">(</span><span class="style4">0</span><span class="style10">, </span><span class="style4">0</span><span class="style10">);</span>
+<span class="body"> 58          </span><span class="style11">m_keyCode </span><span class="style10">= -</span><span class="style4">1</span><span class="style10">;</span>
+<span class="body"> 59      </span><span class="style10">}</span>
+<span class="body"> 60  </span><span class="style10">};</span>
+<span class="body"> 61  </span>
+<span class="body"> 62  </span><span class="style15">/// Structure that is going  to hold all the event infos.</span>
+<span class="body"> 63  </span><span class="style5">struct </span><span class="style11">Binding </span><span class="style10">{</span>
+<span class="body"> 64      </span><span class="style11">Binding</span><span class="style10">(</span><span class="style16">std</span><span class="style10">::</span><span class="style16">string </span><span class="style11">l_name</span><span class="style10">)</span>
+<span class="body"> 65          </span><span class="style10">: </span><span class="style11">m_name</span><span class="style10">(</span><span class="style11">l_name</span><span class="style10">), </span><span class="style11">m_details</span><span class="style10">(</span><span class="style11">l_name</span><span class="style10">), </span><span class="style11">c</span><span class="style10">(</span><span class="style4">0</span><span class="style10">) {}</span>
+<span class="body"> 66  </span>
+<span class="body"> 67      </span><span class="style5">void </span><span class="style11">BindEvent</span><span class="style10">(</span><span class="style11">EventType l_type</span><span class="style10">, </span><span class="style11">EventInfo l_info </span><span class="style10">= </span><span class="style11">EventInfo</span><span class="style10">())</span>
+<span class="body"> 68      </span><span class="style10">{</span>
+<span class="body"> 69          </span><span class="style11">m_event</span><span class="style10">.</span><span class="style11">emplace_back</span><span class="style10">(</span><span class="style11">l_type</span><span class="style10">, </span><span class="style11">l_info</span><span class="style10">);</span>
+<span class="body"> 70      </span><span class="style10">}</span>
+<span class="body"> 71  </span>
+<span class="body"> 72      </span><span class="style11">Events m_event</span><span class="style10">;</span>
+<span class="body"> 73      </span><span class="style16">std</span><span class="style10">::</span><span class="style16">string </span><span class="style11">m_name</span><span class="style10">;</span>
+<span class="body"> 74      </span><span class="style5">int </span><span class="style11">c</span><span class="style10">;      </span><span class="style15">/// Count of events that are "happening".</span>
+<span class="body"> 75  </span>
+<span class="body"> 76      </span><span class="style11">EventDetails m_details</span><span class="style10">;</span>
+<span class="body"> 77  </span><span class="style10">} ;</span>
+<span class="body"> 78  </span>
+<span class="body"> 79  </span><span class="style15">/// Data structure to hold all the bindings.</span>
+<span class="body"> 80  </span><span class="style5">using </span><span class="style11">Bindings </span><span class="style10">= </span><span class="style16">std</span><span class="style10">::</span><span class="style16">unordered_map</span><span class="style10">&lt;</span><span class="style16">std</span><span class="style10">::</span><span class="style16">string</span><span class="style10">, </span><span class="style11">Binding</span><span class="style10">*&gt;;</span>
+<span class="body"> 81  </span>
+<span class="body"> 82  </span><span class="style15">/// Type of the callback container.</span>
+<span class="body"> 83  </span><span class="style5">using </span><span class="style11">Callbacks </span><span class="style10">= </span><span class="style16">std</span><span class="style10">::</span><span class="style16">unordered_map</span><span class="style10">&lt;</span><span class="style16">std</span><span class="style10">::</span><span class="style16">string</span><span class="style10">, </span><span class="style16">std</span><span class="style10">::</span><span class="style16">function</span><span class="style10">&lt;</span><span class="style5">void</span><span class="style10">(</span><span class="style11">EventDetails</span><span class="style10">*)&gt;&gt;;</span>
+<span class="body"> 84  </span>
+<span class="body"> 85  </span>
+<span class="body"> 86  </span><span class="style15">/// The EventManager class.</span>
+<span class="body"> 87  </span><span class="style5">class </span><span class="style11">EventManager </span><span class="style10">{</span>
+<span class="body"> 88  </span><span class="style5">public</span><span class="style10">:</span>
+<span class="body"> 89      </span><span class="style11">EventManager</span><span class="style10">();</span>
+<span class="body"> 90      </span><span class="style10">~</span><span class="style11">EventManager</span><span class="style10">();</span>
+<span class="body"> 91  </span>
+<span class="body"> 92      </span><span class="style5">bool </span><span class="style11">AddBinding</span><span class="style10">(</span><span class="style11">Bindings</span><span class="style10">* </span><span class="style11">l_binding</span><span class="style10">);</span>
+<span class="body"> 93      </span><span class="style5">bool </span><span class="style11">RemoveBinding</span><span class="style10">(</span><span class="style16">std</span><span class="style10">::</span><span class="style16">string </span><span class="style11">l_name</span><span class="style10">);</span>
+<span class="body"> 94      </span><span class="style5">void </span><span class="style11">SetFocus</span><span class="style10">(</span><span class="style5">const bool</span><span class="style10">&amp; </span><span class="style11">l_focus</span><span class="style10">);</span>
+<span class="body"> 95  </span>
+<span class="body"> 96      </span><span class="style15">/// The callback.</span>
+<span class="body"> 97      </span><span class="style5">template</span><span class="style10">&lt;</span><span class="style5">class </span><span class="style11">T</span><span class="style10">&gt;</span>
+<span class="body"> 98      </span><span class="style5">bool </span><span class="style11">AddCallback</span><span class="style10">(</span><span class="style5">const </span><span class="style16">std</span><span class="style10">::</span><span class="style16">string</span><span class="style10">&amp; </span><span class="style11">l_name</span><span class="style10">, </span><span class="style5">void</span><span class="style10">(</span><span class="style11">T</span><span class="style10">::*</span><span class="style11">l_func</span><span class="style10">) (</span><span class="style11">EventDetails</span><span class="style10">*), </span><span class="style11">T</span><span class="style10">* </span><span class="style11">l_instance</span><span class="style10">)</span>
+<span class="body"> 99      </span><span class="style10">{</span>
+<span class="body">100          </span><span class="style5">auto </span><span class="style11">temp </span><span class="style10">= </span><span class="style16">std</span><span class="style10">::</span><span class="style16">bind</span><span class="style10">(</span><span class="style11">l_func</span><span class="style10">, </span><span class="style11">l_instance</span><span class="style10">, </span><span class="style16">std</span><span class="style10">::</span><span class="style11">placeholders</span><span class="style10">::</span><span class="style11">_1</span><span class="style10">);</span>
+<span class="body">101          </span><span class="style5">return </span><span class="style11">m_callbacks</span><span class="style10">.</span><span class="style11">emplace</span><span class="style10">(</span><span class="style11">l_name</span><span class="style10">, </span><span class="style11">temp</span><span class="style10">).</span><span class="style11">second</span><span class="style10">;</span>
+<span class="body">102      </span><span class="style10">}</span>
+<span class="body">103  </span>
+<span class="body">104      </span><span class="style5">void </span><span class="style11">RemoveCallback</span><span class="style10">(</span><span class="style5">const </span><span class="style16">std</span><span class="style10">::</span><span class="style16">string</span><span class="style10">&amp; </span><span class="style11">l_name</span><span class="style10">)</span>
+<span class="body">105      </span><span class="style10">{</span>
+<span class="body">106          </span><span class="style11">m_callbacks</span><span class="style10">.</span><span class="style16">erase</span><span class="style10">(</span><span class="style11">l_name</span><span class="style10">);</span>
+<span class="body">107      </span><span class="style10">}</span>
+<span class="body">108  </span>
+<span class="body">109      </span><span class="style5">void </span><span class="style11">HandleEvent</span><span class="style10">(</span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Event</span><span class="style10">&amp; </span><span class="style11">l_event</span><span class="style10">);</span>
+<span class="body">110      </span><span class="style5">void </span><span class="style11">Update</span><span class="style10">();</span>
+<span class="body">111  </span>
+<span class="body">112      </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Vector2i GetMousePos</span><span class="style10">(</span><span class="style11">sf</span><span class="style10">::</span><span class="style11">RenderWindow</span><span class="style10">* </span><span class="style11">l_wind </span><span class="style10">= </span><span class="style5">nullptr</span><span class="style10">)</span>
+<span class="body">113      </span><span class="style10">{</span>
+<span class="body">114          </span><span class="style5">return </span><span class="style10">(</span><span class="style11">l_wind </span><span class="style10">? </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Mouse</span><span class="style10">::</span><span class="style11">getPosition</span><span class="style10">(*</span><span class="style11">l_wind</span><span class="style10">) : </span><span class="style11">sf</span><span class="style10">::</span><span class="style11">Mouse</span><span class="style10">::</span><span class="style11">getPosition</span><span class="style10">());</span>
+<span class="body">115      </span><span class="style10">}</span>
+<span class="body">116  </span>
+<span class="body">117  </span><span class="style5">private</span><span class="style10">:</span>
+<span class="body">118      </span><span class="style5">void </span><span class="style11">LoadBindings</span><span class="style10">();</span>
+<span class="body">119  </span>
+<span class="body">120      </span><span class="style11">Bindings m_bindings</span><span class="style10">;</span>
+<span class="body">121      </span><span class="style11">Callbacks m_callbacks</span><span class="style10">;</span>
+<span class="body">122      </span><span class="style5">bool </span><span class="style11">m_hasFocus</span><span class="style10">;</span>
+<span class="body">123  </span><span class="style10">};</span>
+<span class="body">124  </span>
+<span class="body">125  </span><span class="style9">#endif </span><span class="style2">// EVENTMANAGER_HPP</span></span>
+</code></pre>
+</body>
+</html>

@@ -9,6 +9,9 @@ Game::Game() : m_window("chapter-2", sf::Vector2u(800, 600)),
     m_mushroom.setTexture(m_mushroomTexture);
     m_increment = sf::Vector2i(400, 400);
     */
+
+    m_textbox.Setup(5, 14, 400, sf::Vector2f(225, 0));
+    m_textbox.Add("Seeded  random number generator with: " + std::to_string(time(NULL)));
 }
 
 Game::~Game() {}
@@ -90,6 +93,9 @@ void Game::Render()
     /// Snake Game
     m_world.Render(*m_window.GetRenderWindow());
     m_snake.Render(*m_window.GetRenderWindow());
+
+    /// Text box thing.
+    m_textbox.Render(*m_window.GetRenderWindow());
 
     m_window.EndDraw();
 }

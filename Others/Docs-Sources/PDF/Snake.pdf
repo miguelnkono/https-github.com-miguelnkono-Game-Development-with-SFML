@@ -1,0 +1,655 @@
+%PDF-1.3
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/Annots []
+/Contents 4 0 R>>
+endobj
+4 0 obj
+<</Length 26316>>
+stream
+q
+1.000 0.000 0.000 -1.000 0.000 841.890 cm
+2 J
+0.57 w
+BT /F1 10.00 Tf ET
+0 G
+0 g
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 37.02 Tm 0 Tr ( 1  ) Tj  ET Q
+q 0.000 0.627 0.000 rg BT 1 0 0 -1 52.35 37.02 Tm 0 Tr (#ifndef SNAKE_HPP) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 48.35 Tm 0 Tr ( 2  ) Tj  ET Q
+q 0.000 0.627 0.000 rg BT 1 0 0 -1 52.35 48.35 Tm 0 Tr (#define SNAKE_HPP) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 59.69 Tm 0 Tr ( 3  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 71.03 Tm 0 Tr ( 4  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 52.35 71.03 Tm 0 Tr (/// Includes) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 82.37 Tm 0 Tr ( 5  ) Tj  ET Q
+q 0.000 0.627 0.000 rg BT 1 0 0 -1 52.35 82.37 Tm 0 Tr (#include <vector>) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 93.71 Tm 0 Tr ( 6  ) Tj  ET Q
+q 0.000 0.627 0.000 rg BT 1 0 0 -1 52.35 93.71 Tm 0 Tr (#include "SFML/Graphics.hpp") Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 105.05 Tm 0 Tr ( 7  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 116.39 Tm 0 Tr ( 8  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 52.35 116.39 Tm 0 Tr (/// The snake representation) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 127.72 Tm 0 Tr ( 9  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 127.72 Tm 0 Tr (struct ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+94.35 119.06 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 94.35 127.72 Tm 0 Tr (SnakeSegment) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 139.06 Tm 0 Tr (10  ) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 52.35 139.06 Tm 0 Tr ({) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 150.40 Tm 0 Tr (11  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 150.40 Tm 0 Tr (    ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+76.35 141.73 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 76.35 150.40 Tm 0 Tr (SnakeSegment) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 148.35 150.40 Tm 0 Tr (\() Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 154.35 150.40 Tm 0 Tr (int ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+178.35 141.73 6.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 178.35 150.40 Tm 0 Tr (x) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 184.35 150.40 Tm 0 Tr (, ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 196.35 150.40 Tm 0 Tr (int ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+220.35 141.73 6.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 220.35 150.40 Tm 0 Tr (y) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 226.35 150.40 Tm 0 Tr (\) : ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+250.35 141.73 48.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 250.35 150.40 Tm 0 Tr (position) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 298.35 150.40 Tm 0 Tr (\() Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+304.35 141.73 6.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 304.35 150.40 Tm 0 Tr (x) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 310.35 150.40 Tm 0 Tr (, ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+322.35 141.73 6.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 322.35 150.40 Tm 0 Tr (y) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 328.35 150.40 Tm 0 Tr (\) {};) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 161.74 Tm 0 Tr (12  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 161.74 Tm 0 Tr (    ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+76.35 153.07 12.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 76.35 161.74 Tm 0 Tr (sf) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 88.35 161.74 Tm 0 Tr (::) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+100.35 153.07 102.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 100.35 161.74 Tm 0 Tr (Vector2i position) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 202.35 161.74 Tm 0 Tr (;) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 173.08 Tm 0 Tr (13  ) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 52.35 173.08 Tm 0 Tr (};) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 184.42 Tm 0 Tr (14  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 184.42 Tm 0 Tr (using ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+88.35 175.75 90.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 88.35 184.42 Tm 0 Tr (SnakeContainer ) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 178.35 184.42 Tm 0 Tr (= ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.627 0.000 rg BT 1 0 0 -1 190.35 184.42 Tm 0 Tr (std) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 208.35 184.42 Tm 0 Tr (::) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.627 0.000 rg BT 1 0 0 -1 220.35 184.42 Tm 0 Tr (vector) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 256.35 184.42 Tm 0 Tr (<) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+262.35 175.75 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 262.35 184.42 Tm 0 Tr (SnakeSegment) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 334.35 184.42 Tm 0 Tr (>;) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 195.76 Tm 0 Tr (15  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 207.09 Tm 0 Tr (16  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 52.35 207.09 Tm 0 Tr (/// Directions of that the snake might take) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 218.43 Tm 0 Tr (17  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 218.43 Tm 0 Tr (enum class ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+118.35 209.76 54.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 118.35 218.43 Tm 0 Tr (Direction) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 229.77 Tm 0 Tr (18  ) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 52.35 229.77 Tm 0 Tr ({) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 241.11 Tm 0 Tr (19  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 241.11 Tm 0 Tr (    ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+76.35 232.44 24.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 76.35 241.11 Tm 0 Tr (None) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 100.35 241.11 Tm 0 Tr (,) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 252.45 Tm 0 Tr (20  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 252.45 Tm 0 Tr (    ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+76.35 243.78 12.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 76.35 252.45 Tm 0 Tr (Up) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 88.35 252.45 Tm 0 Tr (,) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 263.79 Tm 0 Tr (21  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 263.79 Tm 0 Tr (    ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+76.35 255.12 24.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 76.35 263.79 Tm 0 Tr (Down) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 100.35 263.79 Tm 0 Tr (,) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 275.13 Tm 0 Tr (22  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 275.13 Tm 0 Tr (    ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+76.35 266.46 24.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 76.35 275.13 Tm 0 Tr (Left) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 100.35 275.13 Tm 0 Tr (,) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 286.46 Tm 0 Tr (23  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 286.46 Tm 0 Tr (    ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+76.35 277.80 30.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 76.35 286.46 Tm 0 Tr (Right) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 297.80 Tm 0 Tr (24  ) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 52.35 297.80 Tm 0 Tr (};) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 309.14 Tm 0 Tr (25  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 320.48 Tm 0 Tr (26  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 52.35 320.48 Tm 0 Tr (/// The snake class.) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 331.82 Tm 0 Tr (27  ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 52.35 331.82 Tm 0 Tr (class ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+88.35 323.15 30.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 88.35 331.82 Tm 0 Tr (Snake) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 343.16 Tm 0 Tr (28  ) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 52.35 343.16 Tm 0 Tr ({) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 354.50 Tm 0 Tr (29  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 354.50 Tm 0 Tr (    ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 76.35 354.50 Tm 0 Tr (public) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 112.35 354.50 Tm 0 Tr (:) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 365.83 Tm 0 Tr (30  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 365.83 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 100.35 365.83 Tm 0 Tr (/** Default constructor */) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 377.17 Tm 0 Tr (31  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 377.17 Tm 0 Tr (        ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+100.35 368.50 30.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 100.35 377.17 Tm 0 Tr (Snake) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 130.35 377.17 Tm 0 Tr (\() Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 136.35 377.17 Tm 0 Tr (int ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+160.35 368.50 66.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 160.35 377.17 Tm 0 Tr (l_blockSize) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 226.35 377.17 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 388.51 Tm 0 Tr (32  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 388.51 Tm 0 Tr (        ) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 100.35 388.51 Tm 0 Tr (~) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+106.35 379.84 30.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 106.35 388.51 Tm 0 Tr (Snake) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 136.35 388.51 Tm 0 Tr (\(\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 399.85 Tm 0 Tr (33  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 411.19 Tm 0 Tr (34  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 411.19 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 100.35 411.19 Tm 0 Tr (/// Helper methods) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 422.53 Tm 0 Tr (35  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 422.53 Tm 0 Tr (        ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+100.35 413.86 132.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 100.35 422.53 Tm 0 Tr (Direction GetDirection) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 232.35 422.53 Tm 0 Tr (\(\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 433.87 Tm 0 Tr (36  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 433.87 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 433.87 Tm 0 Tr (void ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+130.35 425.20 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 130.35 433.87 Tm 0 Tr (SetDirection) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 202.35 433.87 Tm 0 Tr (\() Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+208.35 425.20 90.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 208.35 433.87 Tm 0 Tr (Direction l_dir) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 298.35 433.87 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 445.20 Tm 0 Tr (37  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 445.20 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 445.20 Tm 0 Tr (int ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 436.54 48.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 445.20 Tm 0 Tr (GetScore) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 172.35 445.20 Tm 0 Tr (\(\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 456.54 Tm 0 Tr (38  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 456.54 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 456.54 Tm 0 Tr (int ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 447.87 48.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 456.54 Tm 0 Tr (GetSpeed) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 172.35 456.54 Tm 0 Tr (\(\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 467.88 Tm 0 Tr (39  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 467.88 Tm 0 Tr (        ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+100.35 459.21 12.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 100.35 467.88 Tm 0 Tr (sf) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 112.35 467.88 Tm 0 Tr (::) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 459.21 120.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 467.88 Tm 0 Tr (Vector2i GetPosition) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 244.35 467.88 Tm 0 Tr (\(\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 479.22 Tm 0 Tr (40  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 479.22 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 479.22 Tm 0 Tr (int ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 470.55 48.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 479.22 Tm 0 Tr (GetLives) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 172.35 479.22 Tm 0 Tr (\(\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 490.56 Tm 0 Tr (41  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 490.56 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 490.56 Tm 0 Tr (void ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+130.35 481.89 78.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 130.35 490.56 Tm 0 Tr (IncreaseScore) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 208.35 490.56 Tm 0 Tr (\(\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 501.90 Tm 0 Tr (42  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 501.90 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 501.90 Tm 0 Tr (bool ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+130.35 493.23 42.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 130.35 501.90 Tm 0 Tr (HasLost) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 172.35 501.90 Tm 0 Tr (\(\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 513.24 Tm 0 Tr (43  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 524.57 Tm 0 Tr (44  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 524.57 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 524.57 Tm 0 Tr (void ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+130.35 515.91 24.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 130.35 524.57 Tm 0 Tr (Lose) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 154.35 524.57 Tm 0 Tr (\(\);        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 220.35 524.57 Tm 0 Tr (/// Handle losing here.) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 535.91 Tm 0 Tr (45  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 535.91 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 535.91 Tm 0 Tr (void ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+130.35 527.24 60.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 130.35 535.91 Tm 0 Tr (ToggleLost) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 190.35 535.91 Tm 0 Tr (\(\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 547.25 Tm 0 Tr (46  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 558.59 Tm 0 Tr (47  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 558.59 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 558.59 Tm 0 Tr (void ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+130.35 549.92 36.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 130.35 558.59 Tm 0 Tr (Extend) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 166.35 558.59 Tm 0 Tr (\(\);      ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 220.35 558.59 Tm 0 Tr (/// Grow the snake.) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 569.93 Tm 0 Tr (48  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 569.93 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 569.93 Tm 0 Tr (void ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+130.35 561.26 30.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 130.35 569.93 Tm 0 Tr (Reset) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 160.35 569.93 Tm 0 Tr (\(\);       ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 220.35 569.93 Tm 0 Tr (/// Reset to starting position.) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 581.27 Tm 0 Tr (49  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 592.61 Tm 0 Tr (50  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 592.61 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 592.61 Tm 0 Tr (void ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+130.35 583.94 24.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 130.35 592.61 Tm 0 Tr (Move) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 154.35 592.61 Tm 0 Tr (\(\);        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 220.35 592.61 Tm 0 Tr (/// Movement method.) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 603.94 Tm 0 Tr (51  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 603.94 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 603.94 Tm 0 Tr (void ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+130.35 595.28 24.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 130.35 603.94 Tm 0 Tr (Tick) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 154.35 603.94 Tm 0 Tr (\(\);        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 220.35 603.94 Tm 0 Tr (/// Update method.) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 615.28 Tm 0 Tr (52  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 615.28 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 615.28 Tm 0 Tr (void ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+130.35 606.61 18.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 130.35 615.28 Tm 0 Tr (Cut) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 148.35 615.28 Tm 0 Tr (\() Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 154.35 615.28 Tm 0 Tr (int ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+178.35 606.61 60.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 178.35 615.28 Tm 0 Tr (l_segments) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 238.35 615.28 Tm 0 Tr (\);        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 298.35 615.28 Tm 0 Tr (///Method for cutting snake.) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 626.62 Tm 0 Tr (53  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 626.62 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 626.62 Tm 0 Tr (void ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+130.35 617.95 36.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 130.35 626.62 Tm 0 Tr (Render) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 166.35 626.62 Tm 0 Tr (\() Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+172.35 617.95 12.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 172.35 626.62 Tm 0 Tr (sf) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 184.35 626.62 Tm 0 Tr (::) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+196.35 617.95 72.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 196.35 626.62 Tm 0 Tr (RenderWindow) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 268.35 626.62 Tm 0 Tr (& ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+280.35 617.95 48.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 280.35 626.62 Tm 0 Tr (l_window) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 328.35 626.62 Tm 0 Tr (\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 637.96 Tm 0 Tr (54  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 649.30 Tm 0 Tr (55  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 649.30 Tm 0 Tr (        ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+100.35 640.63 180.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 100.35 649.30 Tm 0 Tr (Direction GetPhysicalDirection) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 280.35 649.30 Tm 0 Tr (\(\);) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 660.64 Tm 0 Tr (56  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 671.98 Tm 0 Tr (57  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 671.98 Tm 0 Tr (    ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 76.35 671.98 Tm 0 Tr (protected) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 130.35 671.98 Tm 0 Tr (:) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 683.31 Tm 0 Tr (58  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 694.65 Tm 0 Tr (59  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 694.65 Tm 0 Tr (    ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 76.35 694.65 Tm 0 Tr (private) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 118.35 694.65 Tm 0 Tr (:) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 705.99 Tm 0 Tr (60  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 705.99 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 705.99 Tm 0 Tr (void ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+130.35 697.32 84.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 130.35 705.99 Tm 0 Tr (CheckCollision) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 214.35 705.99 Tm 0 Tr (\(\);      ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 268.35 705.99 Tm 0 Tr (/// Checking for collision.) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 717.33 Tm 0 Tr (61  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 717.33 Tm 0 Tr (        ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+100.35 708.66 156.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 100.35 717.33 Tm 0 Tr (SnakeContainer m_snakeBody) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 256.35 717.33 Tm 0 Tr (;     ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 292.35 717.33 Tm 0 Tr (/// Segment vector.) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 728.67 Tm 0 Tr (62  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 728.67 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 728.67 Tm 0 Tr (int ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 720.00 36.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 728.67 Tm 0 Tr (m_size) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 160.35 728.67 Tm 0 Tr (;     ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 196.35 728.67 Tm 0 Tr (/// Size of the graphics.) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 740.01 Tm 0 Tr (63  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 740.01 Tm 0 Tr (        ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+100.35 731.34 90.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 100.35 740.01 Tm 0 Tr (Direction m_dir) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 190.35 740.01 Tm 0 Tr (;        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 244.35 740.01 Tm 0 Tr (/// Current direction of the snake.) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 751.35 Tm 0 Tr (64  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 751.35 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 751.35 Tm 0 Tr (int ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 742.68 42.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 751.35 Tm 0 Tr (m_speed) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 166.35 751.35 Tm 0 Tr (;        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 220.35 751.35 Tm 0 Tr (/// Speed.) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 762.69 Tm 0 Tr (65  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 762.69 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 762.69 Tm 0 Tr (int ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 754.02 42.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 762.69 Tm 0 Tr (m_lives) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 166.35 762.69 Tm 0 Tr (;        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 220.35 762.69 Tm 0 Tr (/// Lives.) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 774.02 Tm 0 Tr (66  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 774.02 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 774.02 Tm 0 Tr (int ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 765.35 42.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 774.02 Tm 0 Tr (m_score) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 166.35 774.02 Tm 0 Tr (;        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 220.35 774.02 Tm 0 Tr (/// Scores.) Tj  ET Q
+BT /F1 10.00 Tf ET
+Q
+
+endstream
+endobj
+5 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/Annots []
+/Contents 6 0 R>>
+endobj
+6 0 obj
+<</Length 1904>>
+stream
+q
+1.000 0.000 0.000 -1.000 0.000 841.890 cm
+2 J
+0.57 w
+BT /F1 10.00 Tf ET
+0 G
+1.000 1.000 1.000 rg
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 37.02 Tm 0 Tr (67  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 37.02 Tm 0 Tr (        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.000 0.000 0.627 rg BT 1 0 0 -1 100.35 37.02 Tm 0 Tr (bool ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+130.35 28.35 36.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 130.35 37.02 Tm 0 Tr (m_lost) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 166.35 37.02 Tm 0 Tr (;        ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 220.35 37.02 Tm 0 Tr (/// Losing state.) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 48.35 Tm 0 Tr (68  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 52.35 48.35 Tm 0 Tr (        ) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+100.35 39.69 12.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 100.35 48.35 Tm 0 Tr (sf) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 112.35 48.35 Tm 0 Tr (::) Tj  ET Q
+BT /F3 10.00 Tf ET
+1.000 1.000 1.000 rg
+124.35 39.69 150.00 11.34 re f q 0.000 0.000 0.000 rg BT 1 0 0 -1 124.35 48.35 Tm 0 Tr (RectangleShape m_bodyRect) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 274.35 48.35 Tm 0 Tr (;      ) Tj  ET Q
+BT /F2 10.00 Tf ET
+q 0.502 0.502 1.000 rg BT 1 0 0 -1 316.35 48.35 Tm 0 Tr (/// Shape used in rendering.) Tj  ET Q
+BT /F1 10.00 Tf ET
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 59.69 Tm 0 Tr (69  ) Tj  ET Q
+q 1.000 0.000 0.000 rg BT 1 0 0 -1 52.35 59.69 Tm 0 Tr (};) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 71.03 Tm 0 Tr (70  ) Tj  ET Q
+q 0.000 0.000 0.000 rg BT 1 0 0 -1 28.35 82.37 Tm 0 Tr (71  ) Tj  ET Q
+q 0.000 0.627 0.000 rg BT 1 0 0 -1 52.35 82.37 Tm 0 Tr (#endif ) Tj  ET Q
+q 0.596 0.596 0.851 rg BT 1 0 0 -1 94.35 82.37 Tm 0 Tr (// SNAKE_HPP) Tj  ET Q
+Q
+
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R 5 0 R ]
+/Count 2
+/MediaBox [0 0 595.276 841.890]
+>>
+endobj
+7 0 obj
+<</Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+>>
+endobj
+8 0 obj
+<</Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+>>
+endobj
+9 0 obj
+<</Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F3 7 0 R
+/F2 8 0 R
+/F1 9 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+10 0 obj
+<<
+/Names []
+>>
+endobj
+11 0 obj
+<<
+/Producer (þÿ w x P d f D o c u m e n t   0 . 9 . 8)
+/CreationDate (D:20240626000740)
+>>
+endobj
+12 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000028508 00000 n 
+0000028902 00000 n 
+0000000009 00000 n 
+0000000098 00000 n 
+0000026465 00000 n 
+0000026554 00000 n 
+0000028603 00000 n 
+0000028709 00000 n 
+0000028808 00000 n 
+0000029026 00000 n 
+0000029058 00000 n 
+0000029166 00000 n 
+trailer
+<<
+/Size 13
+/Root 12 0 R
+/Info 11 0 R
+>>
+startxref
+29270
+%%EOF

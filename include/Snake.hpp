@@ -52,6 +52,8 @@ class Snake
         void Cut(int l_segments);        ///Method for cutting snake.
         void Render(sf::RenderWindow& l_window);
 
+        Direction GetPhysicalDirection();
+
     protected:
 
     private:
